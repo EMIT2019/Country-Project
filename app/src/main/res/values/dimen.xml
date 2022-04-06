@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="DefaultPadding">7dp</dimen>
+    <dimen name="MainTittleFontSize">24sp</dimen>
+    <dimen name="EditTextStandardWidth">220dp</dimen>
+    <dimen name="SmallEditTextMargin">10dp</dimen>
+    <dimen name="ButtonWidth">100dp</dimen>
+</resources>

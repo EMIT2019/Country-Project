@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp">
+
+    <TextView
+        style="@style/ItemListTextView"
+        android:id="@+id/textview_code"
+        android:text="@string/code"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        style="@style/ItemListTextView"
+        android:id="@+id/textview_currencyCode"
+        android:text="@string/currencycode"
+        android:layout_below="@+id/textview_code"/>
+
+    <TextView
+        style="@style/ItemListTextView"
+        android:id="@+id/textview_name"
+        android:text="@string/name"
+        android:layout_below="@+id/textview_currencyCode"/>
+
+    <TextView
+        style="@style/ItemListTextView"
+        android:id="@+id/textview_wikiDataId"
+        android:text="WikiDataId"
+        android:layout_below="@+id/textview_name"/>
+</RelativeLayout>

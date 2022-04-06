@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--MainTextView Tittle-->
+    <style name="MainTittleTextView" parent="Theme.MaterialComponents">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/DefaultPadding</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/MainTittleFontSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <!--EditText Style-->
+    <style name="EditTextStyle" parent="Theme.MaterialComponents">
+        <item name="android:layout_width">@dimen/EditTextStandardWidth</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">?attr/colorOnSecondary</item>
+        <item name="android:layout_marginStart">@dimen/SmallEditTextMargin</item>
+        <item name="android:layout_marginTop">@dimen/SmallEditTextMargin</item>
+    </style>
+
+    <!--Button Style-->
+    <style name="ButtonStyle" parent="Theme.MaterialComponents">
+        <item name="android:layout_width">@dimen/ButtonWidth</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/SmallEditTextMargin</item>
+        <item name="android:layout_marginTop">@dimen/SmallEditTextMargin</item>
+    </style>
+
+    <style name="ItemListTextView" parent="Theme.MaterialComponents">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

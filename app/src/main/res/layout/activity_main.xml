@@ -16,7 +16,7 @@
             style="@style/MainTittleTextView"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:text="Countries" />
+            android:text="@string/countries" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"

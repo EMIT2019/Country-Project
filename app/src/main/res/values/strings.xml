@@ -10,4 +10,5 @@
     <string name="code_">CODE:</string>
     <string name="currency_code">Currency Code:</string>
     <string name="content">Content</string>
+    <string name="countries">Countries</string>
 </resources>

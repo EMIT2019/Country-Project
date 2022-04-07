@@ -2,29 +2,73 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/item_list_shape"
     android:layout_marginBottom="16dp">
 
-    <TextView
-        style="@style/ItemListTextView"
-        android:id="@+id/textview_code"
-        android:text="@string/code"
-        android:layout_alignParentTop="true"/>
-
-    <TextView
-        style="@style/ItemListTextView"
-        android:id="@+id/textview_currencyCode"
-        android:text="@string/currencycode"
-        android:layout_below="@+id/textview_code"/>
-
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         style="@style/ItemListTextView"
         android:id="@+id/textview_name"
-        android:text="@string/name"
-        android:layout_below="@+id/textview_currencyCode"/>
+        android:text="@string/name" />
 
-    <TextView
-        style="@style/ItemListTextView"
-        android:id="@+id/textview_wikiDataId"
-        android:text="WikiDataId"
-        android:layout_below="@+id/textview_name"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_name"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="?attr/colorPrimary"
+            android:orientation="vertical"
+            android:padding="@dimen/DefaultPadding">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/SubItemListTittleCodeSection"
+                android:text="@string/code_" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/SubItemListTextViewCodeSection"
+                android:id="@+id/textview_code"
+                android:layout_width="match_parent"
+                android:text="@string/code" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:padding="@dimen/DefaultPadding">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/SubItemListTittleCurrencyCode"
+                android:id="@+id/textview_tittle_currencyCode"
+                android:layout_marginBottom="@dimen/CurrencyCodeTittleMarginBottom"
+                android:text="@string/currency_code" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/SubItemListContentCurrencyCode"
+                android:id="@+id/textview_currencyCode"
+                android:text="@string/currencycode" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0">
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/SubItemListTittleWikiTittle"
+                android:id="@+id/textview_wikiDataContent"
+                android:text="@string/wikidataid" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/SubItemListTittleWikiTittle"
+                android:id="@+id/textview_wikiDataId"
+                android:text="@string/content" />
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>

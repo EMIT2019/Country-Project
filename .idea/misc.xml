@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/Paises/app/src/main/res/drawable/item_list_shape.xml" value="0.3645" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/Paises/app/src/main/res/drawable/item_list_tittle_shape.xml" value="0.3645" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/Paises/app/src/main/res/layout/activity_main.xml" value="0.37864583333333335" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/Paises/app/src/main/res/layout/item_list.xml" value="0.37864583333333335" />
       </map>

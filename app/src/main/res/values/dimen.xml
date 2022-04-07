@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="DefaultPadding">7dp</dimen>
+    <dimen name="RecyclerviewPadding">11dp</dimen>
+    <dimen name="ItemListTittleSize">18sp</dimen>
+    <dimen name="ItemListTittleSizeCodeSec">16sp</dimen>
+    <dimen name="ItemListContentSizeCodeSec">35sp</dimen>
+    <dimen name="ShapeCorners">20dp</dimen>
+    <dimen name="CurrencyCodeTittleMarginBottom">15dp</dimen>
     <dimen name="MainTittleFontSize">24sp</dimen>
     <dimen name="EditTextStandardWidth">220dp</dimen>
     <dimen name="SmallEditTextMargin">10dp</dimen>

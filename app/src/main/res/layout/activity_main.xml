@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/colorOnBackground"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -11,24 +12,21 @@
         android:layout_height="match_parent">
 
         <TextView
-            style="@style/MainTittleTextView"
             android:id="@+id/main_tittle_textview"
-            android:text="@string/search_by_name"
+            style="@style/MainTittleTextView"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            />
+            android:text="Countries" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/recycler_view"
             android:scrollbars="vertical"
+            android:padding="@dimen/RecyclerviewPadding"
             tools:listitem="@layout/item_list"
             app:layoutManager="LinearLayoutManager"
             android:layout_below="@+id/main_tittle_textview"/>
 
     </RelativeLayout>
-
-
-
 </ScrollView>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--MainTextView Tittle-->
-    <style name="MainTittleTextView" parent="Theme.MaterialComponents">
+    <style name="MainTittleTextView" parent="ThemeOverlay.Material3.AutoCompleteTextView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:padding">@dimen/DefaultPadding</item>
@@ -12,7 +12,7 @@
     </style>
 
     <!--EditText Style-->
-    <style name="EditTextStyle" parent="Theme.MaterialComponents">
+    <style name="EditTextStyle" parent="ThemeOverlay.Material3.AutoCompleteTextView">
         <item name="android:layout_width">@dimen/EditTextStandardWidth</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColorHint">?attr/colorOnSecondary</item>
@@ -21,15 +21,76 @@
     </style>
 
     <!--Button Style-->
-    <style name="ButtonStyle" parent="Theme.MaterialComponents">
+    <style name="ButtonStyle" parent="ThemeOverlay.Material3.AutoCompleteTextView">
         <item name="android:layout_width">@dimen/ButtonWidth</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginStart">@dimen/SmallEditTextMargin</item>
         <item name="android:layout_marginTop">@dimen/SmallEditTextMargin</item>
     </style>
 
-    <style name="ItemListTextView" parent="Theme.MaterialComponents">
+    <!--MainItemListTittle-->
+    <style name="ItemListTextView" parent="ThemeOverlay.Material3.AutoCompleteTextView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@drawable/item_list_tittle_shape</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textSize">@dimen/ItemListTittleSize</item>
     </style>
+
+
+    <!--Recyclerview Items Styles-->
+    <!--SubItemListTittleCodeSection-->
+    <style name="SubItemListTittleCodeSection" parent="ThemeOverlay.Material3.AutoCompleteTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textSize">@dimen/ItemListTittleSizeCodeSec</item>
+        <item name="android:fontFamily">@font/chivo_bold</item>
+    </style>
+
+    <!--SubItemListContentCodeSection-->
+    <style name="SubItemListTextViewCodeSection" parent="ThemeOverlay.Material3.AutoCompleteTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textSize">@dimen/ItemListContentSizeCodeSec</item>
+        <item name="android:fontFamily">@font/amiko_bold</item>
+    </style>
+
+    <!--SubItemListTittleCurrencyCodeSection-->
+    <style name="SubItemListTittleCurrencyCode" parent="ThemeOverlay.Material3.AutoCompleteTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/chivo_bold</item>
+    </style>
+
+    <!--SubItemListTittleCurrencyCodeSection-->
+    <style name="SubItemListContentCurrencyCode" parent="ThemeOverlay.Material3.AutoCompleteTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/chivo_bold</item>
+        <item name="android:textSize">@dimen/ItemListTittleSize</item>
+    </style>
+
+    <!--Wiki Section Styles-->
+    <style name="SubItemListTittleWikiTittle" parent="ThemeOverlay.Material3.AutoCompleteTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/chivo_bold</item>
+    </style>
+
+    <style name="SubItemListWikiContent" parent="ThemeOverlay.Material3.AutoCompleteTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/amiko_bold</item>
+    </style>
+    <!--Recyclerview Items Styles-->
+
 </resources>

@@ -6,4 +6,8 @@
     <string name="code">Code</string>
     <string name="currencycode">CurrencyCode</string>
     <string name="name">Name</string>
+    <string name="wikidataid">Wiki Id:</string>
+    <string name="code_">CODE:</string>
+    <string name="currency_code">Currency Code:</string>
+    <string name="content">Content</string>
 </resources>

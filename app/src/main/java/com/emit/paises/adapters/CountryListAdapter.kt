@@ -1,13 +1,10 @@
 package com.emit.paises.adapters
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.view.animation.AnimationUtils
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.emit.paises.R
 import com.emit.paises.databinding.ItemListBinding
 import com.emit.paises.model.entities.Country
 
@@ -26,15 +23,10 @@ class CountryListAdapter : ListAdapter<Country, CountryListAdapter.CountryListVi
 
     inner class CountryListViewHolder(val binding: ItemListBinding): RecyclerView.ViewHolder(binding.root) {
         fun bind(country: Country) = with(binding) {
-            animate(itemView)
             textviewCode.text = country.code
             textviewCurrencyCode.text = country.currencyCodes[0]
             textviewName.text = country.name
             textviewWikiDataId.text = country.wikiDataId
-        }
-
-        fun animate(view: View) {
-            view.animation = AnimationUtils.loadAnimation(view.context, R.anim.gradient)
         }
     }
 
